@@ -8,7 +8,7 @@ var cars = {
             auto : true,
             model: 2022,
             price : 6000000,
-            image : "image/civic.jpg",
+            images : "images/city.webp",
             type : "sedan",
         },
         civic : {
@@ -18,7 +18,7 @@ var cars = {
             auto : true,
             model: 2023,
             price : 8000000,
-            image : "image/civic.webp",
+            images : "images/civic.jpg",
             type : "sedan",
         },
         BRV : {
@@ -28,7 +28,7 @@ var cars = {
             auto : true,
             model: 2022,
             price : 7500000,
-            image : "image/brv.jpg",
+            images : "images/brv.jpg",
             type : "SUV",
         },
         tucson : {
@@ -38,7 +38,7 @@ var cars = {
             auto : true,
             model: 2022,
             price : 8200000,
-            image : "tucson/civic.png",
+            images : "images/tucson.png",
             type : "SUV",
         },
         vezel : {
@@ -48,7 +48,7 @@ var cars = {
             auto : true,
             model: 2016,
             price : 6450000,
-            image : "image/vezel.webp",
+            images : "images/vezel.webp",
             type : "SUV",
         },
         CRZ : {
@@ -58,7 +58,7 @@ var cars = {
             auto : true,
             model: 2022,
             price : 9000000,
-            image : "image/crz.jpg",
+            images : "images/crz.jpg",
             type : "SUV",
         },
         HRV : {
@@ -68,7 +68,7 @@ var cars = {
             auto : true,
             model: 2022,
             price : 8900000,
-            image : "image/hrv.jpg",
+            images : "images/hrv.jpg",
             type : "SUV",
         },
 
@@ -81,7 +81,7 @@ var cars = {
             auto : true,
             model: 2022,
             price : 7900000,
-            image : "image/corolla.webp",
+            images : "images/corolla.webp",
             type : "sedan",
         },
         aqua : {
@@ -91,7 +91,7 @@ var cars = {
             auto : true,
             model: 2016,
             price : 4900000,
-            image : "image/aqua.webp",
+            images : "images/aqua.webp",
             type : "hatchback",
         },
         vitz : {
@@ -101,7 +101,7 @@ var cars = {
             auto : true,
             model: 2022,
             price : 4400000,
-            image : "image/vitz.webp",
+            images : "images/vitz.webp",
             type : "hatchback",
         },
         prius : {
@@ -111,7 +111,7 @@ var cars = {
             auto : true,
             model: 2020,
             price : 7900000,
-            image : "image/prius.jpeg",
+            images : "images/prius.jpeg",
             type : "sedan",
         },
         revo : {
@@ -121,7 +121,7 @@ var cars = {
             auto : true,
             model: 2022,
             price : 12900000,
-            image : "image/Revo.png",
+            images : "images/Revo.png",
             type : "SUV",
         },
         fortuner : {
@@ -131,7 +131,7 @@ var cars = {
             auto : true,
             model: 2021,
             price : 17900000,
-            image : "image/fortuner.png",
+            images : "images/fortuner.webp",
             type : "SUV",
         },
         prado : {
@@ -141,7 +141,7 @@ var cars = {
             auto : true,
             model: 2022,
             price : 22900000,
-            image : "image/prado.webp",
+            images : "images/prado.webp",
             type : "SUV",
         },
         camry : {
@@ -151,7 +151,7 @@ var cars = {
             auto : true,
             model: 2019,
             price : 24900000,
-            image : "image/camry.webp",
+            images : "images/camry.webp",
             type : "sedan",
         },
         yaris : {
@@ -161,7 +161,7 @@ var cars = {
             auto : true,
             model: 2022,
             price : 3900000,
-            image : "image/yaris.jpg",
+            images : "images/yaris.jpg",
             type : "sedan",
         },
         Crown : {
@@ -171,7 +171,7 @@ var cars = {
             auto : true,
             model: 2022,
             price : 3900000,
-            image : "image/Crown.webp",
+            images : "images/Crown.webp",
             type : "sedan",
         },
 
@@ -184,17 +184,17 @@ var cars = {
             auto : true,
             model: 2022,
             price : 9000000,
-            image : "image/sportage.jpg",
+            images : "images/sportage.webp",
             type : "SUV",
         },
         picanto : {
             name : "picanto",
             company: "KIA",
             color : ["Black","White","silver","Grey"],
-            auto : falsa,
+            auto : false,
             model: 2020,
             price : 2800000,
-            image : "image/picanto.webp",
+            images : "images/picanto.webp",
             type : "hatchback",
         },
         stonic : {
@@ -204,7 +204,7 @@ var cars = {
             auto : true,
             model: 2020,
             price : 5200000,
-            image : "image/stonic.jpg",
+            images : "images/stonic.jpg",
             type : "hatchback",
         },
         
@@ -217,7 +217,7 @@ var cars = {
             auto : true,
             model: 2022,
             price : 3000000,
-            image : "image/alto.webp",
+            images : "images/alto.webp",
             type : "hatchback",
         },
         swift : {
@@ -227,7 +227,7 @@ var cars = {
             auto : false,
             model: 2022,
             price : 4000000,
-            image : "image/swift.webp",
+            images : "images/swift.webp",
             type : "hatchback",
         },
         mehran : {
@@ -237,10 +237,40 @@ var cars = {
             auto : false,
             model: 2015,
             price : 1500000,
-            image : "image/mehran.webp",
+            images : "images/mehran.webp",
+            type : "hatchback",
+        },
+        liana : {
+            name : "liana",
+            company: "suzuki",
+            color : ["Black","White","silver","Grey"],
+            auto : false,
+            model: 2015,
+            price : 1500000,
+            images : "images/liana.webp",
             type : "hatchback",
         },
     },    
 
 }
+
+for(var key in cars){
+    for(var key1 in cars[key] ){
+var card_div = document.getElementById("cards-div");
+card_div.innerHTML +=`
+<div class="card" style="width: 18rem;">
+<img src="${cars[key][key1].images}" class="card-img-top" alt="...">
+<div class="card-body">
+<p class="card-text">${cars[key][key1].name}</p>
+
+  <p class="card-text">${cars[key][key1].company}   </p>
+  <p class="card-text">${cars[key][key1].model}</p>
+  <p class="card-text">${cars[key][key1].price}</p>
+
+</div>
+</div>
+`}}
+
+
+
 
