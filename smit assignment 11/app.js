@@ -254,6 +254,9 @@ var cars = {
 
 }
 
+
+
+
 for(var key in cars){
     for(var key1 in cars[key] ){
 var card_div = document.getElementById("cards-div");
@@ -263,7 +266,7 @@ card_div.innerHTML +=`
 <div class="card-body">
 <p class="card-text">${cars[key][key1].name}</p>
 
-  <p class="card-text">${cars[key][key1].company}   </p>
+  <p class="card-text">${cars[key][key1].company}</p>
   <p class="card-text">${cars[key][key1].model}</p>
   <p class="card-text">${cars[key][key1].price}</p>
 
@@ -271,6 +274,91 @@ card_div.innerHTML +=`
 </div>
 `}}
 
+function home(){
+    location.reload()
+}
 
+function showHonda() {
+    var cardDiv = document.getElementById("cards-div");
+    cardDiv.innerHTML = ""; 
+  
+    for (var key in cars.honda) {
+      var car = cars.honda[key];
+  
+      cardDiv.innerHTML += `
+        <div class="card" style="width: 18rem;">
+          <img src="${car.images}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">${car.name}</p>
+            <p class="card-text">${car.company}</p>
+            <p class="card-text">${car.model}</p>
+            <p class="card-text">${car.price}</p>
+          </div>
+        </div>
+      `;
+    }
+  }
+  
 
+function toyota(){
+    var cardDiv = document.getElementById("cards-div")
+    cardDiv.innerHTML = ""
 
+    for(var key in cars.Toyota){
+      var car = cars.Toyota[key]
+
+      cardDiv.innerHTML += `
+      <div class="card" style="width: 18rem;">
+        <img src="${car.images}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">${car.name}</p>
+          <p class="card-text">${car.company}</p>
+          <p class="card-text">${car.model}</p>
+          <p class="card-text">${car.price}</p>
+        </div>
+      </div>
+    `;
+    }
+}
+
+function KIA(){
+    var cardDiv = document.getElementById("cards-div")
+    cardDiv.innerHTML = ""
+
+    for(var key in cars.KIA){
+      var car = cars.KIA[key]
+
+      cardDiv.innerHTML += `
+      <div class="card" style="width: 18rem;">
+        <img src="${car.images}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">${car.name}</p>
+          <p class="card-text">${car.company}</p>
+          <p class="card-text">${car.model}</p>
+          <p class="card-text">${car.price}</p>
+        </div>
+      </div>
+    `;
+    }
+}
+
+function suzuki(){
+    var cardDiv = document.getElementById("cards-div")
+    cardDiv.innerHTML = ""
+
+    for(var key in cars.suzuki){
+      var car = cars.suzuki[key]
+
+      cardDiv.innerHTML += `
+      <div class="card" style="width: 18rem;">
+        <img src="${car.images}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">${car.name}</p>
+          <p class="card-text">${car.company}</p>
+          <p class="card-text">${car.model}</p>
+          <p class="card-text">${car.price}</p>
+        </div>
+      </div>
+    `;
+    }
+}
